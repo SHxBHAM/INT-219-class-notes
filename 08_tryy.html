@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p>Example of event listener method</p>
+    <p>Click the button to see the event</p>
+    <p id = "para"></p>
+    <button id="btn">Click</button>
+    <script>
+        const paragraph = document.getElementById("para");
+        const button = document.getElementById("btn");
+        function tryy(){
+            paragraph.innerHTML="ram ram"
+        }
+        button.addEventListener("click",tryy)
+    </script>
+</body>
+</html>
