@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p id="demo"></p>
+    <button onclick="fun()">click me:)</button>
+    <script>
+        let object = {
+            name:"shubham",
+            Age:"19",
+            email:"shubhammishra@lpu.in"
+        }
+        details = "name: "+object.name+"\n Age: "+object.Age+"\n Email: "+object.email;
+        let p = document.getElementById('demo');
+        function fun(){
+            p.innerHTML = `${details}`
+        }
+        
+    </script>
+</body>
+</html>

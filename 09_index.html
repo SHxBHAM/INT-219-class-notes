@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p id="demo"></p>
+    <button onclick="start()">start</button>
+    <button onclick="stop()">stop</button>
+    <script>
+        function start(){
+            i = setInterval(datetime,1000);
+        }
+        function datetime(){
+            document.getElementById('demo').innerHTML = new Date();
+            document.getElementById('demo').style.cssText = "font-size:70px; color:blue;";
+        }
+        function stop(){
+            clearInterval(i);
+            document.getElementById('demo').innerHTML = "time rok diya bhai tune toh" ;
+
+        }
+    </script>
+</body>
+</html>
