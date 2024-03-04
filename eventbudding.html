@@ -8,8 +8,14 @@
 <body>
     <form  onclick="alert('form')" > FORM
         <div onclick="alert('div')" > DIV
-            <p onclick="alert('p')" > PARA </p>
+            <p class = "para" onclick="alert('p')" > PARA </p>
         </div>
     </form>
+    <script>
+        let p = document.getElementsByClassName("para");
+        p.addEventListener("click",()=>{
+            p.innerHTML = `SHUBHAM`;
+        })
+    </script>
 </body>
 </html>

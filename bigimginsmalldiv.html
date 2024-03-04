@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #myDiv{
+            height: 200px;
+            width: 200px;
+            overflow: auto;
+        }
+    </style>
+</head>
+<body>
+    <div id="myDiv">
+        <img id= "content"src="./image (2).png" alt="">
+    </div>
+    <h1 id="demo"></h1>
+    <script>
+        let img = document.getElementById("content");
+        let h = img.scrollHeight
+        let w = img.scrollWidth
+        h1 = document.getElementById('demo');
+        h1.innerHTML = `height = ${h}  width = ${w}`
+    </script>
+</body>
+</html>
